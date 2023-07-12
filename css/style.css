@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background: url("https://wallpapers.com/images/hd/futuristic-city-lights-digital-art-vqc0wfkneziwpzi8.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.btn-close1{
+	background: none;
+	margin-right:10px!important;
+}
+.linkItem{
+	margin-top: 20px;
+}
+.linkItem a{
+	text-decoration:none;
+}
+.card{
+	background: #000000B7;
+}
+
+.card-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	transition: 1s ease!important;
+}
+.media div{
+	padding: 10px 15px;
+	display: inline-block!important;
+	cursor: pointer;
+}
+
+.media div svg{
+	font-size: 30px!important;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	transition: 1s ease;
+	padding: 5px;
+	box-shadow: 0 0 4px 1px #1CC9E2D0;
+}
+.media div svg:hover{
+	box-shadow: 0 0 8px 3px #1CC9E2D0;
+}
+.alert{
+	position: fixed;
+	top: 10px ;
+	right:0 ;
+	width: 450px;
+}
+.animTranslate3d{
+	transition: 1s ease;
+	transform: translateX(0);
+}
+.animTranslate2d{
+	transition: 1s ease;
+	transform: translateX(100%);
+}
+
+.infoBtn svg{
+	font-size: 25px;
+	color: #2C93D2FF!important;
+	cursor: pointer;
+	animation: infoAnim 5s 9999;
+	transition: 1s ease;
+	margin-right: 10px!important;
+	border-radius: 100%;
+}
+.checkBtn{
+	transition: 1s ease;
+}
+.checkBtn:hover{
+	box-shadow: 0 0 8px 3px #1CC9E2D0;
+}
+.volumeBtn{
+	margin: 15px 20px;
+	color: #4444!important;
+	cursor: pointer;
+	transition: 1s ease;
+	font-size: 25px;
+}
+.volumeBtn:hover{
+	color: #111!important;
+}
+.infoBorder{
+	border-left:3px solid #003E91FF;
+	margin-left: 10px;
+	height: 90%;
+}
+.bo-bottom{
+	border-bottom: 2px solid #1CC9E2D0;
+}
+@keyframes infoAnim{
+	0%{
+		transform:scale(1.03);
+	}50%{
+		transform:scale(1.8);
+			box-shadow: 0 0 8px 3px #1CC9E2D0;
+	}100%{
+		transform:scale(1.12);
+		box-shadow: 0 0 8px 3px #204CC4AE;
+	}
+}
+
+.linkLang{
+	text-decoration: none;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+.editInfomore{
+	position: fixed;
+	top: 0!important;left: 0!important;width: 300px!important;height: 100vh!important;
+	
+}
+.editBtnmore{
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+@media (min-width: 576px){
+.editInfomore {
+    --bs-modal-margin: 0!important;
+    --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+}
+@media (min-width: 200px){
+.editInfomore {
+    --bs-modal-margin: 0!important;
+    --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+}
+@media (max-width:310px){
+	.editInfomore{
+		width: 100%!important;
+	}
+}
+.editInfomore .modal-content{
+	height: 100vh!important;
+}
+@media (max-width: 500px) {
+	.alert{
+		width: 100%!important;
+	}
+}
+
